@@ -80,7 +80,7 @@ fn datei_prüfen(map: &mut HashMap<Straße, bool>, dateiname: &str) {
                     );
                 }
             }
-            Err(fehler) => println!("{fehler}"), //TODO hilfreiche informationen ausgeben
+            Err(fehler) => println!("Fehler beim Einlesen einer Straße: {fehler}"), //TODO hilfreiche informationen ausgeben
         };
     }
     println!("\nErgebnis");
